@@ -1,0 +1,21 @@
+<?xml version="1.0"?> 
+<odoo>   
+<act_window id="action_section" 
+	name="Section" 
+	res_model="gestion.section" 
+	view_mode="tree,form" /><!-- Menu item to open To-do Task list -->   
+
+<act_window id="action_village" 
+	name="Village" 
+	res_model="gestion.village" 
+	view_mode="tree,form" />
+
+<menuitem id="menu_section" 
+		  name="Section"
+          parent="purchase.menu_procurement_management"
+          action="action_section" sequence="17"/>
+<menuitem id="menu_village" 
+		  name="Village"
+          parent="purchase.menu_procurement_management"
+          action="action_village" sequence="18"/>
+</odoo>

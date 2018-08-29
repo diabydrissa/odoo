@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="fournisseur_information" model="ir.ui.view">     
+        <field name="name">Fournisseur Form</field>
+        <field name="model">res.partner</field>  
+          <field name="inherit_id" ref="base.view_partner_form"/> 
+        <field name="arch" type="xml">
+        <!-- <field name="street" invisible="1"/>  -->      
+        <field name="category_id" position="after">
+            <field name="compte_contribuable"/>
+            <field name="numero_agrement"/>
+            <field name="code_import_export"/>
+            <field name="regime_imposition"/>
+        </field>
+    </field>
+</record>
+</odoo>
